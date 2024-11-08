@@ -1,0 +1,26 @@
+<main class="align">
+
+    <div class="grid">
+  
+  
+        <div class="form__field">
+          <label for="login__username">
+            <span class="hidden">Usuario</span></label>
+          <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Usuario" [(ngModel)]="datosLogin.username" required>
+        </div>
+  
+        <div class="form__field">
+          <label for="login__password">
+            <span class="hidden">Contraseña</span></label>
+          <input id="login__password" type="password" name="password" class="form__input" placeholder="Contraseña" [(ngModel)]="datosLogin.password" required>
+        </div>
+  
+        <div class="form__field">
+            <button type="button" id="iniciarsesion" (click)="Login()">Iniciar sesión</button>
+        </div>
+    
+      <p class="text--center">No estas registrado? <a id="creacuenta" href="">Crea una cuenta</a></p>
+  
+    </div>
+  
+  </main>

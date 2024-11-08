@@ -1,0 +1,94 @@
+
+
+  /* helpers/align.css */
+  
+  .align {
+    display: grid;
+    place-items: center;
+  }
+  
+  .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+  }
+  
+  /* helpers/hidden.css */
+  
+  .hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+    
+  main {
+    margin: 0;
+    background-image: url(./../../../../public/img/DeWatermark.ai_1725278727820.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+  a {
+    color: white;
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* modules/form.css */
+  
+  
+  input {
+    border: 0;
+    color: white;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+
+  
+  .form__field {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.519);
+    color: #d5d5d5;
+    max-width: 3620px;
+    padding: 20px;
+    position: relative;
+    border-radius: 2px;
+
+  }
+
+.iniciarsesion{
+    text-align: center;
+    color: white;
+}
+  
+  .form__input {
+    flex: 1;
+    color: white;
+  }
+  
+  p {
+    margin-block: 1.5rem;
+  }
+  
+  .text--center {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+ 

@@ -1,0 +1,124 @@
+.container {
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  
+    main {
+      background-image: url(./../../../../public/img/DeWatermark.ai_1725278727820.png);
+    }
+  
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .table {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+  
+    &-header {
+      padding: 1rem;
+      background-color: #f9fafb;
+      text-align: left;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+    }
+  
+    &-body {
+      background-color: #ffffff;
+      border-top: 1px solid #e5e7eb;
+    }
+  
+    &-cell {
+      padding: 1rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+  }
+  
+  .edit-button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+  
+    &:hover {
+      background-color: #2563eb;
+    }
+  }
+  
+  .modal {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 28rem;
+  
+    .modal-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    .modal-input {
+      margin-bottom: 1rem;
+  
+      label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: bold;
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+  
+      .input-field {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.375rem;
+        color: #374151;
+  
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+      }
+    }
+  
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+  
+      .cancel-button {
+        background-color: #6b7280;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+  
+        &:hover {
+          background-color: #4b5563;
+        }
+      }
+  
+      .save-button {
+        background-color: #3b82f6;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rim;
+  
+        &:hover {
+          background-color: #2563eb;
+        }
+      }
+    }
+  }
+  

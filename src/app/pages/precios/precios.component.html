@@ -1,0 +1,51 @@
+<app-header></app-header>
+<main>
+  <div class="container">
+    <h1 class="precios">Precios</h1>
+    <div *ngIf="!precios.length">
+      <p>Cargando precios...</p>
+    </div>
+    <div *ngIf="precios.length">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="table-header">Tiempo</th>
+            <th class="table-header">Costo</th>
+            <th class="table-header">Acciones</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+          <tr *ngFor="let precio of precios">
+            <td class="table-cell">{{ precio.categoria }}</td>
+            <td class="table-cell">{{ formatearMonto(precio.costo) }}</td>
+            <td class="table-cell">
+              <button (click)="abrirModal(precio)" class="edit-button">Editar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Modal de edición -->
+  <div *ngIf="mostrarModal">
+    <div class="modal">
+      <h2>Editar Precio</h2>
+      <p>Categoría: {{ precioSeleccionado!.categoria }}</p>
+      <div class="modal-input">
+        <label>Nuevo costo:</label>
+        <input
+          type="number"
+          [(ngModel)]="nuevoCosto"
+          class="input-field"
+          min="0"
+          step="0.01"
+        >
+      </div>
+      <div class="modal-actions">
+        <button (click)="cerrarModal()" class="cancel-button">Cancelar</button>
+        <button (click)="guardarCambios()" class="save-button">Guardar</button>
+      </div>
+    </div>
+  </div>
+</main>

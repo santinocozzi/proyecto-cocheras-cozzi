@@ -1,0 +1,130 @@
+#table {
+    width: 50%;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #f5f5f5; /* Fondo más claro para un estilo minimalista */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-tabla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #333; 
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+#tabla  {
+    padding: 12px 15px; 
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Borde inferior sutil */
+}
+
+.fila:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.fila:nth-child(odd) {
+    background-color: #fff; 
+}
+
+
+.Disponible{
+    background-size: 50%;
+    padding: 50%;
+}
+
+
+#estado-cocheras{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #e0e0e0; /* Color neutro más suave */
+    padding: 5px;
+    border-radius: 5px;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    margin: 0;
+    background-image: url(./../../../../public/img/DeWatermark.ai_1725278727820.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.boton-agregar{
+    text-align: center;
+    background-color: #007bff; /* Azul más vibrante */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    width: 180px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boton-borrar{
+    cursor: pointer;
+}
+
+.boton-agregar:hover {
+    background-color: #0056b3; /* Oscurece el color al pasar el mouse */
+}
+
+div {
+    display: grid;
+    padding: 10px;
+    align-items: center;
+}
+
+.fila{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    align-items:center ;
+    text-align: center;
+}
+
+.disponibilidad {
+    &.clickable {
+      cursor: pointer;
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+    
+    &.ocupado {
+      color: #0066cc;
+      font-weight: bold;
+    }
+  }
+  
+  .monto-details {
+    text-align: left;
+    padding: 1rem;
+    
+    p {
+      margin: 0.5rem 0;
+    }
+    
+    h3 {
+      margin-top: 1rem;
+      color: #0066cc;
+      font-size: 1.5rem;
+    }
+  }

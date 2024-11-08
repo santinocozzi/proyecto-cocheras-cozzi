@@ -1,0 +1,31 @@
+<app-header></app-header>
+<main>
+  <div>
+    <button (click)="agregarFila()" class="boton-agregar">Agregar fila</button>
+  </div>
+  <div id="tabla">
+    <div id="header-tabla">
+      <div>{{header.nro}}</div>
+      <div>{{header.disponibilidad}}</div>
+      <div>{{header.ingreso}}</div>
+      <div>{{header.acciones}}</div>
+    </div>
+    
+    <div *ngFor="let fila of filas; let i = index" class="fila">
+      <div>{{fila.nro}}</div>
+      <div (click)="abrirModal(fila.nro)" 
+           class="disponibilidad"
+           [class.ocupado]="fila.patente"
+           [class.clickable]="true">
+        {{fila.patente ? 'Ocupado - ' + fila.patente : (fila.disponibilidad ? 'Disponible' : 'No disponible')}}
+      </div>
+      <div>{{fila.ingresos}}</div>
+      <div class="boton-borrar">
+        <button (click)="eliminarFila(i)">ELIMINAR</button>
+        <button (click)="toggleDisponibilidadCochera(i)">
+          {{!fila.disponibilidad || fila.patente ? 'Liberar' : 'Disponibilidad'}}
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
